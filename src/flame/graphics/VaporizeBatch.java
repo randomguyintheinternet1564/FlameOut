@@ -112,7 +112,7 @@ public class VaporizeBatch extends Batch{
 
         boolean contain = (spriteHandler == null || spriteHandler.get(bx, by, width, height, rotation));
 
-        if(color.a <= 0.9f){
+        if(true){
             /*
             RejectedRegion r = new RejectedRegion();
             r.region = region;
@@ -150,7 +150,6 @@ public class VaporizeBatch extends Batch{
                 cons.get(d, c);
             });
             dis.z = z;
-            dis.drawnColor.set(color);
 
             if(discon != null){
                 discon.get(dis);
