@@ -152,7 +152,6 @@ public class DespondencyUnitType extends UnitType{
                     y = -62.75f;
                     shootY = 12f;
                     mirror = true;
-                    useAmmo = false;
 
                     rotate = true;
                     alternate = true;
