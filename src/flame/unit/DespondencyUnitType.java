@@ -94,7 +94,6 @@ public class DespondencyUnitType extends UnitType{
                     rotationLimit = 190f;
                     rotateSpeed = 3.5f;
                     //rotateSpeed = 0.5f;
-
                     shootCone = 2f;
                     shootSound = FlameSounds.desLaser;
                     laserShootSound = FlameSounds.desLaserShoot;
