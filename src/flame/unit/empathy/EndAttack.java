@@ -206,7 +206,7 @@ public class EndAttack extends AttackAI{
         //float fall = (1f - Mathf.clamp(Math.abs(pdst - size) / 100000f)) * sfin * Mathf.clamp((size - 100f) / 100f);
         float fall = (1f - Mathf.clamp(pdst > size ? ((pdst - size) / 800f) : (-(pdst - size) / 100000f))) * sfin * Mathf.clamp((size - 100f) / 100f);
         if(fall > 0.0001f){
-            sound.play(unit.x, unit.y, sounds.wind3, 0f, true);
+            sound.play(unit.x, unit.y, fall, 0f, true);
         }
         
         for(int i = 0; i < s; i += 5){
