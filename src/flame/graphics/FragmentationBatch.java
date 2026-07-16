@@ -110,7 +110,6 @@ public class FragmentationBatch extends Batch{
                 fragFunc.get(fr);
                 fr.generateGore();
             } : fragFunc);
-            frag.drawnColor.set(Color);
             if(genGore) frag.goreColor.set(goreColor);
             if(trailEffect != null) frag.trailEffect = trailEffect;
             if(explosionEffect != null) frag.explosionEffect = explosionEffect;
