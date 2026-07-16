@@ -1,5 +1,4 @@
 name: Commit Testing
-
 on: [push]
 
 jobs:
