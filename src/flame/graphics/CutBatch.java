@@ -64,7 +64,7 @@ public class CutBatch extends Batch{
         float bx = (cos * dx - sin * dy) + (x + originX);
         float by = (sin * dx + cos * dy) + (y + originY);
 
-        if(color.a <= 0.9f || region == FragmentationBatch.updateCircle() || blending != Blending.normal || region == Core.atlas.white() || !region.found()){
+        if(region == FragmentationBatch.updateCircle() || blending != Blending.normal || region == Core.atlas.white() || !region.found()){
             RejectedRegion r = new RejectedRegion();
             r.region = region;
             r.blend = blending;
@@ -72,7 +72,6 @@ public class CutBatch extends Batch{
             r.width = width;
             r.height = height;
 
-            FlameFX.rejectedRegion.at(bx, by, rotation, color, r);
             return;
         }
         Severation c = Severation.generate(region, bx, by, width, height, rotation);
