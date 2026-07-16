@@ -131,7 +131,7 @@ public class MagicAttack extends AttackAI{
                     Tmp.v5.trns(rotation, 200f).add(unit.x, unit.y);
                     FlameFX.shootShockWave.at(Tmp.v5.x, Tmp.v5.y, rotation, 390f);
 
-                    Sounds.laserblast.play(1f, 0.5f, 0f);
+                    Sounds.wind3.play(1f, 0.5f, 0f);
 
                     impact = true;
                 }
