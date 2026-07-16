@@ -52,7 +52,7 @@ public class LaserShotgunAttack extends AttackAI{
                 shots--;
                 reload2 = 8f;
 
-                Sounds.bolt.at(unit.x, unit.y, 2f);
+                Sounds.wind3.at(unit.x, unit.y, 2f);
 
                 if(shots <= 0){
                     unit.randAI(true, unit.health < 50f);
