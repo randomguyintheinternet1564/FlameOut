@@ -14,6 +14,7 @@ public class ImpactBatch extends SpriteBatch{
     public boolean useColor = false;
     public boolean canChangeShader = true;
     boolean white = false;
+    float[] vertices;
     float[] svt = new float[1024 * SPRITE_SIZE];
 
     public static ImpactBatch batch;
