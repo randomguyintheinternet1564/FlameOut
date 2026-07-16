@@ -127,7 +127,7 @@ public class ApathyBigLaserBulletType extends BulletType{
 
             health = bl.health;
             if(bl.team == Team.derelict && b.time >= 140f){
-                Sounds.explosion.at(bl.x, bl.y);
+                Sounds.wind3.at(bl.x, bl.y);
                 FlameFX.aoeExplosion2.at(bl.x, bl.y, bl.hitSize() / 2f);
                 bl.tile.remove();
             }
