@@ -114,6 +114,7 @@ public class RicochetAttack extends AttackAI{
 
         @Override
         public void update(){
+            try{
             if(target == null || !((Entityc)target).isAdded()){
                 Teamc t = Units.closestTarget(team, x, y, 700f);
                 if(t instanceof Sized){
@@ -277,6 +278,9 @@ public class RicochetAttack extends AttackAI{
             });
             
             return tt != null;
+        } catch(Exception e){
+               console.log(e);
+        }
         }
 
         void scan(float x1, float y1, float x2, float y2){
