@@ -11,7 +11,6 @@ public abstract class BasicEntity implements Entityc{
 
     @Override
     public void update(){
-
     }
 
     @Override
